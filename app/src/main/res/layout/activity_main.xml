@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/header_bg">
+
+
+    <ImageView
+        android:id="@+id/logo_epicture"
+        android:layout_width="256dp"
+        android:layout_height="302dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo_epi_login" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:paddingBottom="50dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="LOG IN"
+            android:textColor="#FFFFFF"
+            app:strokeColor="#FFFFFF"
+            android:onClick="login"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            app:cornerRadius="70dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
